@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;;
 }
-.wrapper{
+body{
     width: 100%;
 }
 .top-nav{
@@ -45,21 +45,21 @@
 .nav img{
     margin-left: 70px;
 }
-.nav ul{
+.menu{
     list-style: none;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-.nav ul li{
+.item{
     padding: 10px;
 }
-.nav ul li a{
+.item a{
     text-decoration: none;
     color: #000000;
 }
-.nav button{
+.bt{
     border: 0;
     outline: 0;
     width: 170px;
@@ -69,6 +69,9 @@
     margin-right: 100px;
     color: #FFFFFF;
     cursor: pointer;
+}
+.bars{
+    display: none;
 }
 .slides{
     position: relative;
@@ -251,7 +254,6 @@
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
-    text-align: end;
 }
 .container3 a{
     text-decoration: none;
@@ -369,8 +371,101 @@
     color: #FFFFFF;
     padding: 10px;
 }
-@media (max-width:600px){
+@media (max-width: 1020px){
     .wrapper{
         width: 100%;
+    }
+    .nav{
+         position: absolute;
+    }
+    .menu{
+        position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #5D9ACB;
+    }
+    .bars{
+        position: fixed;
+        z-index: 100;
+        top: 1rem;
+        right: 1rem;
+        padding: 4px;
+        border: none;
+        background: #5D9ACB;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    .showMenu {
+        transform: translateY(0);
+      }
+    .container1{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .fa-xmark{
+        display: none;
+    }
+    .title{
+        margin-top: 30px;
+    }
+    .tabs{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-between;
+    }
+    .container2{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .laptop{
+        position: relative;
+    }
+    .laptop img{
+        height: 200px;
+        position: absolute;
+        margin-left: -150px;
+        margin-top: -50px;
+    }
+    .text{
+        margin-right: 0;
+        margin-top: 150px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .container3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer{
+        padding: 20px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .email{
+        margin-left: 20px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
     }
 }

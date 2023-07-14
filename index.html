@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ySign</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/3f59d83690.js" crossorigin="anonymous"></script>
@@ -10,7 +10,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&family=Rubik+Pixels&family=Source+Serif+Pro:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
     <div class="top-nav">
         <ul>
         <li><a href="#">REQUEST A DEMO</a></li>
@@ -20,17 +19,21 @@
     </div>
     <div class="nav">
         <img src="img/Logo.png" alt="logo">
-        <ul>
-            <li><a href="#">SOLUTIONS</a></li>
-            <li><a href="#">PLANS AND PRICING</a></li>
-            <li><a href="#">CONTACT SALES</a></li>
+        <ul class="menu">
+            <li class="item"><a href="#">SOLUTIONS</a></li>
+            <li class="item"><a href="#">PLANS AND PRICING</a></li>
+            <li class="item"><a href="#">CONTACT SALES</a></li>
         </ul>
-        <ul>
-            <li><a href="#">JOIN A MEETING</a></li>
-            <li><a href="#">HOST A MEETING</a></li>
-            <li><a href="#">SIGN IN</a></li>
+        <ul class="menu">
+            <li class="item"><a href="#">JOIN A MEETING</a></li>
+            <li class="item"><a href="#">HOST A MEETING</a></li>
+            <li class="item"><a href="#">SIGN IN</a></li>
         </ul>
-        <button type="submit">SIGN UP FOR FREE</button>
+        <button type="submit" class="bt">SIGN UP FOR FREE</button>
+       <button class="bars">
+        <i class="fa-solid fa-bars fa-xl"></i>
+        <i class="fa-solid fa-xmark"></i>
+    </button>
     </div>
     <div class="slides">
         <div class="slide" style="background: url(img/img1.png);">
@@ -169,5 +172,4 @@
         </div>
         </div>
     <script src="main.js"></script>
-</div>
 </body>
