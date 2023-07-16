@@ -375,9 +375,6 @@ body{
     .wrapper{
         width: 100%;
     }
-    .nav{
-         position: absolute;
-    }
     .menu{
         position: fixed;
         transform: translateY(-100%);
