@@ -375,9 +375,7 @@ body{
     .wrapper{
         width: 100%;
     }
-    .nav{
-         position: absolute;
-    }
+    
     .menu{
         position: fixed;
         transform: translateY(-100%);
@@ -389,6 +387,7 @@ body{
         background: #5D9ACB;
     }
     .bars{
+        display: block;
         position: fixed;
         z-index: 100;
         top: 1rem;
